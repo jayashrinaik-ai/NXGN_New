@@ -73,10 +73,13 @@ public class AdminDashboardpage {
 		
 		// click is not working we provide some wait on that element
 		
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", SubjectWiseAttendanceSubModuel);
-		wait.until(ExpectedConditions.elementToBeClickable(SubjectWiseAttendanceSubModuel));
+		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", SubjectWiseAttendanceSubModuel);
+		//wait.until(ExpectedConditions.elementToBeClickable(SubjectWiseAttendanceSubModuel));
 	
 		// called here action class to open in new window for this link
+		
+		
+		wait.until(ExpectedConditions.visibilityOf(SubjectWiseAttendanceSubModuel));
 		
 		actionhelper.open_Link_In_New_Tab(SubjectWiseAttendanceSubModuel);
 		
