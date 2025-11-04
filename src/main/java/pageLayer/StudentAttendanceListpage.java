@@ -30,7 +30,7 @@ public class StudentAttendanceListpage {
    
    // Locators
    
-   @FindBy(xpath ="//*[@id=\"addRowsBtn\"]")
+   @FindBy(css="#addRowsBtn")
    
     private WebElement AddAttendanceCTA;
    
