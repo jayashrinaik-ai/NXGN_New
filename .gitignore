@@ -10,12 +10,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-# === Reports & Output ===
-test-output/
-reports/
-screenshots/
-extent-reports/
-logs/
+
 
 # === Temporary files ===
 *.tmp
