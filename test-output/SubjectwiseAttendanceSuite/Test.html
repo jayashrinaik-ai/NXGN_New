@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 04 14:33:15 IST 2025</td>
+<td>Started on:</td><td>Tue Nov 04 16:08:17 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28110 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23782 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -84,12 +84,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0896bceda3f5c0a1378a3d7aa2e4e4f6, findElements {using=xpath, value=//*[@id=\&quot;select_program_div\&quot;]/div[1]/ul/li}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\vikas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51763}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51763/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0896bceda3f5c0a1378a3d7aa2e4e4f6
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Command: [115b9f981ded50713ddb8993810c934c, findElements {using=xpath, value=//*[@id=\&quot;select_program_div\&quot;]/div[1]/ul/li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\vikas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58392/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 115b9f981ded50713ddb8993810c934c
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -106,43 +103,18 @@ Session ID: 0896bceda3f5c0a1378a3d7aa2e4e4f6
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	at pageLayer.AddStudentSubjectwiseAttendancePage.select_programe(AddStudentSubjectwiseAttendancePage.java:311)
 	at testLayer.AddStudentSubjectwiseAttendancePageTest.Verify_Add_Attendance_Module(AddStudentSubjectwiseAttendancePageTest.java:78)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace390034407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace390034407'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[@id=\&quot;select_program_div\&quot;]/div[1]/ul/li because of the following error:
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace983834017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace983834017'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[@id=\&quot;select_program_div\&quot;]/div[1]/ul/li because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//*[@id=\&quot;select_program_div\&quot;]/div[1]/ul/li&apos; is not a valid XPath expression.
   (Session info: chrome=141.0.7390.123)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0896bceda3f5c0a1378a3d7aa2e4e4f6, findElements {using=xpath, value=//*[@id=\&quot;select_program_div\&quot;]/div[1]/ul/li}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\vikas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51763}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51763/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0896bceda3f5c0a1378a3d7aa2e4e4f6
+Command: [115b9f981ded50713ddb8993810c934c, findElements {using=xpath, value=//*[@id=\&quot;select_program_div\&quot;]/div[1]/ul/li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\vikas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58392/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 115b9f981ded50713ddb8993810c934c
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -190,7 +162,7 @@ Session ID: 0896bceda3f5c0a1378a3d7aa2e4e4f6
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>2</td>
-<td>testLayer.AddStudentSubjectwiseAttendancePageTest@8297b3a</td></tr>
+<td>testLayer.AddStudentSubjectwiseAttendancePageTest@7905a0b8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -201,20 +173,20 @@ Session ID: 0896bceda3f5c0a1378a3d7aa2e4e4f6
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testLayer.AddStudentSubjectwiseAttendancePageTest.verify_add_Attendance_CTA()'><b>verify_add_Attendance_CTA</b><br>Test class: testLayer.AddStudentSubjectwiseAttendancePageTest</td>
+<td title='testLayer.AddStudentSubjectwiseAttendancePageTest.verify_subjectwise_Attendance_module_from_sidebar()'><b>verify_subjectwise_Attendance_module_from_sidebar</b><br>Test class: testLayer.AddStudentSubjectwiseAttendancePageTest</td>
 <td></td>
-<td>5</td>
-<td>testLayer.AddStudentSubjectwiseAttendancePageTest@8297b3a</td></tr>
+<td>1</td>
+<td>testLayer.AddStudentSubjectwiseAttendancePageTest@7905a0b8</td></tr>
 <tr>
 <td title='testLayer.AddStudentSubjectwiseAttendancePageTest.verify_login()'><b>verify_login</b><br>Test class: testLayer.AddStudentSubjectwiseAttendancePageTest</td>
 <td></td>
-<td>0</td>
-<td>testLayer.AddStudentSubjectwiseAttendancePageTest@8297b3a</td></tr>
+<td>6</td>
+<td>testLayer.AddStudentSubjectwiseAttendancePageTest@7905a0b8</td></tr>
 <tr>
-<td title='testLayer.AddStudentSubjectwiseAttendancePageTest.verify_subjectwise_Attendance_module_from_sidebar()'><b>verify_subjectwise_Attendance_module_from_sidebar</b><br>Test class: testLayer.AddStudentSubjectwiseAttendancePageTest</td>
+<td title='testLayer.AddStudentSubjectwiseAttendancePageTest.verify_add_Attendance_CTA()'><b>verify_add_Attendance_CTA</b><br>Test class: testLayer.AddStudentSubjectwiseAttendancePageTest</td>
 <td></td>
-<td>7</td>
-<td>testLayer.AddStudentSubjectwiseAttendancePageTest@8297b3a</td></tr>
+<td>4</td>
+<td>testLayer.AddStudentSubjectwiseAttendancePageTest@7905a0b8</td></tr>
 </table><p>
 </body>
 </html>

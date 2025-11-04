@@ -6,8 +6,8 @@
       <class name="testLayer.AddStudentSubjectwiseAttendancePageTest">
         <methods>
           <include name="teardown"/>
-          <include name="mark_Attendace_for_student"/>
           <include name="setUp"/>
+          <include name="Verify_Add_Attendance_Module"/>
         </methods>
       </class> <!-- testLayer.AddStudentSubjectwiseAttendancePageTest -->
     </classes>

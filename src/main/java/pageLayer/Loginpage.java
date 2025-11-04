@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Loginpage  {
 	
-	private WebDriver driver;
+	public WebDriver driver;
 	
 	//constructor
 	public Loginpage(WebDriver driver) {
@@ -28,7 +28,7 @@ public class Loginpage  {
 	
 	private WebElement passwordField;
 	
-	@FindBy ( xpath= "/html/body/section/div/div[1]/div/div/div[3]/form/div[4]/input")
+	@FindBy (xpath="//input[@type='submit']")
 	
 	private WebElement loginButton;
 	

@@ -2,7 +2,7 @@ package pageLayer;
 
 import java.time.Duration;
 
-import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +14,7 @@ import utils.ActionHelper;
 
 public class AdminDashboardpage {
 
-	private WebDriver driver;
+	public WebDriver driver;
 	
 	private WebDriverWait wait;
 	
@@ -33,7 +33,7 @@ public class AdminDashboardpage {
 		// Initialized helper
 		actionhelper = new ActionHelper(driver);
 		
-		this.wait = new WebDriverWait(driver,Duration.ofSeconds(15));
+		this.wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		
 	}
 	
@@ -44,10 +44,19 @@ public class AdminDashboardpage {
 		
 		private WebElement StudentInfoModule ;
 		
-		@FindBy (xpath = "//*[@id=\"sidebar_menu\"]/li[4]/ul/li[8]/a")
+		@FindBy (xpath = "//*[@id=\"sidebar_menu\"]/li[4]/ul/li[7]/a")
 		
 		private WebElement SubjectWiseAttendanceSubModuel ;
 		
+		
+		@FindBy(xpath= "//*[@id=\"sidebar_menu\"]/li[5]/a")
+		
+		
+		private WebElement StudyMaterialfield;
+		
+		@FindBy(xpath = "//*[@id=\"sidebar_menu\"]/li[5]/ul/li[1]/a")
+		
+		private WebElement uploadContentmodule;
 	
 	
 	
@@ -85,6 +94,26 @@ public class AdminDashboardpage {
 		
 		actionhelper.switchToLatestTab(SubjectWiseAttendanceSubModuel);
 	
+	}
+	
+	public void click_On_Study_Material()
+	{
+		
+	//	wait.until(ExpectedConditions.visibilityOf(StudyMaterialfield));
+		
+		StudyMaterialfield.click();
+		
+	}
+	
+	public void click_On_UploadContent_module()
+	{
+		wait.until(ExpectedConditions.visibilityOf(uploadContentmodule));
+		
+
+		actionhelper.open_Link_In_New_Tab(uploadContentmodule);
+		
+		actionhelper.switchToLatestTab(uploadContentmodule);
+		
 	}
 }
 
