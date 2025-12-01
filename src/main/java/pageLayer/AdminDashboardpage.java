@@ -2,6 +2,7 @@ package pageLayer;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 //import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utils.ActionHelper;
+import utils.LogHelper;
+import utils.WaitUtil;
 
 public class AdminDashboardpage {
 
@@ -33,7 +36,7 @@ public class AdminDashboardpage {
 		// Initialized helper
 		actionhelper = new ActionHelper(driver);
 		
-		this.wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		this.wait = new WebDriverWait(driver,Duration.ofSeconds(1000));
 		
 	}
 	
@@ -65,8 +68,14 @@ public class AdminDashboardpage {
 	public void click_On_Student_Info_Module()
 	
 	{
+		//WaitUtil.waitForPreloaderToDisappear(driver);
+		
+		LogHelper.info(" Clicked Student Info module ");
+		
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.preloader")));
 		
 		wait.until(ExpectedConditions.visibilityOf(StudentInfoModule));
+		
 		StudentInfoModule.click();
 	}
 	
@@ -77,8 +86,7 @@ public class AdminDashboardpage {
 		
 		
       
-		//wait.until(ExpectedConditions.visibilityOf(StudentInfoModule));
-		//SubjectWiseAttendanceSubModuel.click();
+		LogHelper.info(" Clicked on  Subjectwise Attendance Submodule ");
 		
 		// click is not working we provide some wait on that element
 		
@@ -94,6 +102,13 @@ public class AdminDashboardpage {
 		
 		actionhelper.switchToLatestTab(SubjectWiseAttendanceSubModuel);
 	
+	}
+	
+	public void openInNormalWindow() {
+		
+		wait.until(ExpectedConditions.visibilityOf(SubjectWiseAttendanceSubModuel));
+		
+		SubjectWiseAttendanceSubModuel.click();
 	}
 	
 	public void click_On_Study_Material()

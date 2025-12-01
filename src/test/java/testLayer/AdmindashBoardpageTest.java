@@ -14,7 +14,7 @@ public class AdmindashBoardpageTest extends BaseClass {
 	{
 		// first we will login
 		
-		Loginpage login = new Loginpage(driver);
+		Loginpage login = new Loginpage(getDriver());
 		
 		login.enter_email_In_Emailfield(property.getProperty("email"));
 		
@@ -24,7 +24,7 @@ public class AdmindashBoardpageTest extends BaseClass {
 		
 		// we craete Admin dashboard page object
 		
-		AdminDashboardpage admindashboard = new AdminDashboardpage(driver);
+		AdminDashboardpage admindashboard = new AdminDashboardpage(getDriver());
 		
 		admindashboard.click_On_Student_Info_Module();
 		

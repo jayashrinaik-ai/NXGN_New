@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import pageLayer.Loginpage;
 import testBase.BaseClass;
+import utils.LogHelper;
 
 public class LoginTest extends BaseClass {
 	
@@ -13,13 +14,17 @@ public class LoginTest extends BaseClass {
 	{
 		//login page object get property from property file
 		
-		Loginpage login = new Loginpage(driver);
+		LogHelper.info("Starting login test");
+		
+		Loginpage login = new Loginpage(getDriver());
 		
 		login.enter_email_In_Emailfield(property.getProperty("email"));
 		
 		login.enter_password_In_PasswordField(property.getProperty("password"));
 		
 		login.click_On_LoginButton();
+		
+		LogHelper.info("User successfully logged");
 	}
 
 }

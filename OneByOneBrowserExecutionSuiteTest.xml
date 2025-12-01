@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OneByOneBrowserExecutionSuite" parallel="none" thread-count="4">
+
+ 				<!-- Chrome -->
+  
+  <test thread-count="4" name="Chrome Test">
+   <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testLayer.AddStudentSubjectwiseAttendancePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  				 <!-- Edge -->
+  
+  <test thread-count="4" name="Edge Test">
+   <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="testLayer.AddStudentSubjectwiseAttendancePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  				 <!-- firefox -->
+  				 
+  <test thread-count="4" name="Firefox Test">
+   <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="testLayer.AddStudentSubjectwiseAttendancePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  				 <!-- Opera -->
+  	<!-- 			 
+  <test thread-count="4" name="Opera Test">
+   <parameter name="browser" value="opera"></parameter>
+    <classes>
+      <class name="testLayer.AddStudentSubjectwiseAttendancePageTest"/>
+    </classes>
+  </test> 
+  -->
+  
+  <!-- Test -->
+</suite> <!-- Suite -->

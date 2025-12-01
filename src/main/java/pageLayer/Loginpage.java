@@ -5,10 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utils.LogHelper;
+
 
 public class Loginpage  {
 	
 	public WebDriver driver;
+	
 	
 	//constructor
 	public Loginpage(WebDriver driver) {
@@ -35,6 +38,7 @@ public class Loginpage  {
 	
 	public void enter_email_In_Emailfield(String email) 
 	{
+		LogHelper.info(" Entering email ");
 		
 		emailField.sendKeys(email);
 		
@@ -42,6 +46,7 @@ public class Loginpage  {
 	
 	public void enter_password_In_PasswordField(String password) 
 	{
+		LogHelper.info(" Entering password ");
 		
 		passwordField.sendKeys(password);
 		
@@ -50,6 +55,8 @@ public class Loginpage  {
 	
 	public void click_On_LoginButton()
 	{
+		LogHelper.info(" Clicked on sign in button ");
+		
 		loginButton.click();
 	}
 

@@ -13,7 +13,7 @@ public class Study_material_Upload_content_pageTest extends BaseClass {
 	
 	public void upload_content()
 	{
-		Loginpage loginpage = new Loginpage(driver);
+		Loginpage loginpage = new Loginpage(getDriver());
 		
 		loginpage.enter_email_In_Emailfield(property.getProperty("email"));
 		
@@ -28,7 +28,7 @@ public class Study_material_Upload_content_pageTest extends BaseClass {
 	
 	public void clickOnUploadContent()
 	{
-		AdminDashboardpage adminDashboardpage = new AdminDashboardpage(driver);
+		AdminDashboardpage adminDashboardpage = new AdminDashboardpage(getDriver());
 		
 		adminDashboardpage.click_On_Study_Material();
 		
@@ -40,7 +40,7 @@ public class Study_material_Upload_content_pageTest extends BaseClass {
 	
 	public void clickOnUploadContentCTA()
 	{
-		Study_material_Upload_content_Listpage study_material_Upload_content_Listpage = new Study_material_Upload_content_Listpage(driver);
+		Study_material_Upload_content_Listpage study_material_Upload_content_Listpage = new Study_material_Upload_content_Listpage(getDriver());
 		
 		study_material_Upload_content_Listpage.click_On_upload_Content_CTA();
 	}

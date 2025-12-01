@@ -43,7 +43,7 @@ public class TestListener extends BaseClass implements ITestListener {
 			
 			// Take screenshot safely
 			
-			if(screenshotpath!= null && screenshotpath.toLowerCase().contains("no screenshot"))
+			if(screenshotpath!= null && screenshotpath.endsWith(".png"))
 			{
 				test.get().addScreenCaptureFromPath(screenshotpath);
 				
@@ -56,7 +56,7 @@ public class TestListener extends BaseClass implements ITestListener {
 				
 			else {
 				
-				System.out.println("screenshot path invalid" + result.getName());
+				System.out.println("screenshot path invalid : " + result.getName());
 			}
 
 			

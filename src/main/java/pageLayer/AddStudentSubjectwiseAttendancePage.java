@@ -34,7 +34,9 @@ public class AddStudentSubjectwiseAttendancePage {
 
 	// Xpath of SubjectCategoryType 
 
-	@FindBy(xpath = "//*[@id=\"subject_category_div\"]/div[1]")
+	//@FindBy(xpath = "//*[@id=\"subject_category_div\"]/div[1]")
+	
+	@FindBy(xpath = "/html/body/div[2]/div/div[3]/div/div/div[2]/form/div[1]/div/div[1]/div[1]")
 
 	private WebElement SubjectCategoryTypedrpdown;
 

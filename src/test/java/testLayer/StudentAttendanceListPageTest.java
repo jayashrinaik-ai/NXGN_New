@@ -14,7 +14,7 @@ public class StudentAttendanceListPageTest extends BaseClass {
 	
 	public void Verify_the_Add_Attendance_CTA()
 	{
-		Loginpage loginpage = new Loginpage(driver);
+		Loginpage loginpage = new Loginpage(getDriver());
 		
 		
 		loginpage.enter_email_In_Emailfield(property.getProperty("email"));
@@ -23,13 +23,17 @@ public class StudentAttendanceListPageTest extends BaseClass {
 		
 		loginpage.click_On_LoginButton();
 		
-		AdminDashboardpage adminDashboardpage = new AdminDashboardpage(driver);
+		AdminDashboardpage adminDashboardpage = new AdminDashboardpage(getDriver());
 		
 		adminDashboardpage.click_On_Student_Info_Module();
 		
-		adminDashboardpage.click_On_Subjectwise_Attendance_Submodule_In_New_Tab();
+	//	adminDashboardpage.click_On_Subjectwise_Attendance_Submodule_In_New_Tab();
 		
-		StudentAttendanceListpage studentAttendanceListpage = new StudentAttendanceListpage(driver);
+		adminDashboardpage.openInNormalWindow();
+		
+		StudentAttendanceListpage studentAttendanceListpage = new StudentAttendanceListpage(getDriver());
+		
+		//driver.navigate().refresh();
 		
 		studentAttendanceListpage.click_On_Add_Attendance_CTA();
 		

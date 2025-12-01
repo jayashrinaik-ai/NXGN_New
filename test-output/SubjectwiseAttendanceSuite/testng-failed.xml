@@ -5,11 +5,15 @@
     <listener class-name="listerners.TestListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testLayer.AddStudentSubjectwiseAttendancePageTest">
         <methods>
           <include name="teardown"/>
+          <include name="verify_subjectwise_Attendance_module_from_sidebar"/>
+          <include name="verify_add_Attendance_CTA"/>
           <include name="setUp"/>
+          <include name="verify_login"/>
           <include name="Verify_Add_Attendance_Module"/>
         </methods>
       </class> <!-- testLayer.AddStudentSubjectwiseAttendancePageTest -->
