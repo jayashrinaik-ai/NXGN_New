@@ -29,7 +29,7 @@ public class AddStudentSubjectwiseAttendancePageTest extends BaseClass {
 
 	}
 
-													//@Test(priority = 2,dependsOnMethods = {"verify_login"})
+													@Test(priority = 2,dependsOnMethods = {"verify_login"})
 
 	public void verify_subjectwise_Attendance_module_from_sidebar()
 
@@ -44,7 +44,7 @@ public class AddStudentSubjectwiseAttendancePageTest extends BaseClass {
 
 	}
 
-													//@Test(priority = 3, dependsOnMethods = {"verify_subjectwise_Attendance_module_from_sidebar"})
+												@Test(priority = 3, dependsOnMethods = {"verify_subjectwise_Attendance_module_from_sidebar"})
 
 	public void verify_add_Attendance_CTA()
 	{

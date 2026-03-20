@@ -83,7 +83,7 @@ public class BaseClass {
 
 		case "edge": 
 
-			System.setProperty("webdriver.edge.driver", "C:\\Users\\vikas\\eclipse-workspace\\NXGN_New\\driver\\drivers\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "E:\\Jayashri Naik\\edgedriver_win64 (4)\\msedgedriver.exe");
 
 			driver.set(new EdgeDriver());
 
@@ -96,7 +96,7 @@ public class BaseClass {
 
 			FirefoxOptions options = new FirefoxOptions();
 
-			options.setBinary("C:\\Users\\vikas\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
+			options.setBinary("C:\\Users\\vikas\\AppData\\Local\\Mozilla Firefox\\geckodriver.exe");
 
 			driver.set(new FirefoxDriver());
 			

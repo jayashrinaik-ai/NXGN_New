@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testLayer.AttendanceWithMultipleTests">
+      <class name="testLayer.AddStudentSubjectwiseAttendancePageTest">
         <methods>
+          <include name="verify_subjectwise_Attendance_module_from_sidebar"/>
           <include name="teardown"/>
           <include name="setUp"/>
+          <include name="verify_add_Attendance_CTA"/>
           <include name="verify_login"/>
         </methods>
-      </class> <!-- testLayer.AttendanceWithMultipleTests -->
+      </class> <!-- testLayer.AddStudentSubjectwiseAttendancePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

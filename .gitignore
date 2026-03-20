@@ -1,38 +1,9 @@
-# === Java build files ===
-*.class
-*.jar
-*.war
-*.ear
+*.bak
 *.log
-
-# === Maven build directory ===
+test-output/
 target/
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-
-
-# === Temporary files ===
-*.tmp
-*.swp
-*.swo
-*.DS_Store
-Thumbs.db
-
-# === Eclipse/IntelliJ project files ===
-.project
-.classpath
+bin/
 .settings/
-.idea/
-*.iml
-
-# === OS-specific files ===
-.DS_Store
-Thumbs.db
-
-# === Misc ===
-/bin/
-/out/
-/build/
-/testng-failed.xml
-# NXGN_New Git Ignore File 
+.metadata/
+.classpath
+.project

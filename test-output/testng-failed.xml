@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [ParallelSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome browser - Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testLayer.AttendanceWithMultipleTests">
+      <class name="testLayer.AddStudentSubjectwiseAttendancePageTest">
         <methods>
+          <include name="verify_subjectwise_Attendance_module_from_sidebar"/>
           <include name="teardown"/>
+          <include name="verify_add_Attendance_CTA"/>
           <include name="setUp"/>
           <include name="verify_login"/>
         </methods>
-      </class> <!-- testLayer.AttendanceWithMultipleTests -->
+      </class> <!-- testLayer.AddStudentSubjectwiseAttendancePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Chrome browser - Test(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testLayer.AddStudentSubjectwiseAttendancePageTest">
+        <methods>
+          <include name="verify_subjectwise_Attendance_module_from_sidebar"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="verify_add_Attendance_CTA"/>
+          <include name="verify_login"/>
+        </methods>
+      </class> <!-- testLayer.AddStudentSubjectwiseAttendancePageTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testLayer.AddStudentSubjectwiseAttendancePageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verify_subjectwise_Attendance_module_from_sidebar"/>
+          <include name="verify_add_Attendance_CTA"/>
+          <include name="setUp"/>
+          <include name="verify_login"/>
+        </methods>
+      </class> <!-- testLayer.AddStudentSubjectwiseAttendancePageTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [ParallelSuite] -->

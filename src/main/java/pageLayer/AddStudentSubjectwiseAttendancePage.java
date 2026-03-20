@@ -36,11 +36,11 @@ public class AddStudentSubjectwiseAttendancePage {
 
 	//@FindBy(xpath = "//*[@id=\"subject_category_div\"]/div[1]")
 	
-	@FindBy(xpath = "/html/body/div[2]/div/div[3]/div/div/div[2]/form/div[1]/div/div[1]/div[1]")
+	@FindBy(xpath = "//div[@class='nice-select primary_select form-control open']/child::span")
 
 	private WebElement SubjectCategoryTypedrpdown;
 
-	@FindBy (xpath ="//*[@id=\"subject_category_div\"]/div[1]/ul/li")
+	@FindBy (xpath ="//li[@class='option selected focus']/parent::ul")
 
 	private List <WebElement> subjectCategoryTypeValues;
 
